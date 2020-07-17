@@ -9,7 +9,7 @@ def oxford_comma(array)
         string << item + ", and "
         counter += 1
       elsif counter == array.length
-        string << item + "."
+        string << item
       else
         string << item + ", "
         counter += 1
