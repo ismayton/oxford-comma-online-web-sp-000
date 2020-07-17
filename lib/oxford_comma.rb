@@ -12,6 +12,6 @@ def oxford_comma(array)
         string << item + ", "
       end
     end
+    string
   end
-  string
 end
