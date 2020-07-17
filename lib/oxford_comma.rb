@@ -4,17 +4,16 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(" and ")
   else
-    counter = 1
+    counter = 0
     string = ''
     array.each do |item|
+      counter += 1
       if counter == array.length - 1
         string << item + ", and "
-        counter += 1
       elsif counter == array.length
         string << item
       else
         string << item + ", "
-        counter += 1
       end
     end
     string
