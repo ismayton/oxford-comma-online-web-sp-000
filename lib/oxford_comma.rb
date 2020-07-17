@@ -5,10 +5,12 @@ def oxford_comma(array)
     counter = 0
     string = ''
     array.each do |item|
-      string << item + ", "
       counter += 1
       if counter == array.length
-        string << "and "
+        string << item + ", and "
+      else
+        string << item + ", "
       end
+    end
   end
 end
