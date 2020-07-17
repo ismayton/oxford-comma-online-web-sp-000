@@ -8,5 +8,7 @@ def oxford_comma(array)
       string << item + ", "
       counter += 1
       if counter == array.length
+        string << "and "
+      end
   end
 end
